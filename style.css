@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #0c2030;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1280px;
+    margin:auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+    position: relative;
+    width: 99%;   
+    height: 99%;
+    background:#0c2030;
+
+}
+#app ::before, #app::after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: -3px;
+    background:linear-gradient(45deg, #dc0090,#000068,
+    #9712cc, #ff0000,#f04ff3,#ffff00,#f01300,#0494ce);
+    background-size: 300%;
+    animation: shadow 20s linear infinite;
+}
+#app::after{
+    filter: blur(30px);
+}
+@keyframes shadow{
+    0%{background-position: 0 0;}
+    50%{background-position: 300%;}
+    100%{background-position: 0 0;}
+}
+.nav_links_container{
+    display: grid;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #061522;
+    grid-template-columns:30% 15% 55%;
+}
+.logo_name_container{
+    grid-column: 1;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline;
+    color : white;
+    padding: 10px;
+}
+.nav_links_container a:hover{
+    color: rgb(3, 189, 189);
+    transition: 0.3s;
+}
+.ul_list_container{
+    grid-column: 3;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.main_header_container{
+    width: 80%;
+    height: 350px;
+    padding: 20px;
+    margin: 100px 80px;
+    color: white;
+
+}
+h1{
+    font-size: 50px;
+}
+.cool-hand{
+    width: 60px;
+
+}
+.loader{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(3, 189, 189);
+}
+.title_container p{
+    font-size: 25px;
+    
+}
+.btn_about-me{
+    width: 100px;
+    height: 40px;
+    border-radius: 5%;
+    background-color: rgb(3, 189, 189);
+    color:white;
+    margin-top: 20px;
+    text-transform: uppercase;
+    border: none;
+    transition: 0.3s;
+    text-align: center;
+    font-weight: 700;
+    
+    
+}
+.main_header_container .btn_about-me:hover{
+    background-color:rgb(2, 133, 133) ;
+    cursor: pointer;
+}
+
+.donw-scroll{
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    padding:30px ;
+}
+.donw-scroll img{ 
+    width: 30px;
+    margin-left: 49%;
+    margin-top: 10px;
+    cursor: pointer;
+ 
+}
