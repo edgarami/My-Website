@@ -133,3 +133,15 @@ sr.reveal(".container-about-text", {
   origin: "rigth",
   distance: "-3000px",
 });
+window.sr = ScrollReveal();
+sr.reveal(".container-about-img", {
+  duration: 2000,
+  origin: "left",
+  distance: "-3000px",
+});
+window.sr = ScrollReveal();
+sr.reveal(".scroll-footer", {
+  duration: 2000,
+  origin: "top",
+  distance: "-3000px",
+});
