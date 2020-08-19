@@ -25,6 +25,7 @@ body {
   --switchSpinner: white;
   --text-color: white;
   --border-bottom: #061522;
+  --iknow-section: #021320;
 }
 #app {
   position: relative;
@@ -104,7 +105,7 @@ a {
 }
 .main_header_container {
   width: 100%;
-  height: 600px;
+  height: 500px;
   color: var(--text-color);
   background: var(--dark-background);
 }
@@ -151,7 +152,7 @@ h1 {
 
 .donw-scroll {
   width: 100%;
-  height: 100%;
+  height: 200px;
   padding: 30px;
   background: var(--dark-background);
 }
@@ -232,6 +233,31 @@ h1 {
 .btn_about-me.cv {
   font-size: 15px;
   margin-left: 0%;
+}
+#iknow {
+  background-color: var(--iknow-section);
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-rows: 100% 100%;
+}
+.container-ikonw h2 {
+  margin: 20px 0 10px;
+  text-align: center;
+  color: var(--text-color);
+}
+.container-ikonw ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  align-items: center;
+  grid-gap: 28px;
+  color: var(--text-color);
+  padding: 20px;
+  font-family: "monserrat", "sans serif";
+}
+.text-red {
+  color: red;
 }
 
 footer {
@@ -364,9 +390,11 @@ footer .made-love {
   --switchSpinner: #282943;
   --text-color: black;
   --border-bottom: #04c8c8;
+  --iknow-section: white;
 }
 .is-ligth-mode {
   --dark-background: #0c2030;
   --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
   --switchSpinner: white;
+  --iknow-section: #021320;
 }
